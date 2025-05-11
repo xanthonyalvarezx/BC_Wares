@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     {{-- google fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,27 +81,37 @@
         <div> {{ $slot }}</div>
     </main>
     <footer class="container-fluid">
-        <div>
-            icons
+        <div class="footer-icons">
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
         </div>
-        <div class="d-flex">
-            <div class="footerlinks">
+
+        <div class="footer-right">
+            <div class="footer-links">
                 <ul>
                     <h6>Vendors</h6>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="">What it takes to become <br>a vendor
+                        </a>
+                    <li>
+                    <li>
+                        <a href="">Vendor policies</a>
+                    </li>
                 </ul>
             </div>
-            <div class="footerlinks">
+            <div class="footer-links">
                 <ul>
                     <h6>Explore</h6>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>FAQ</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Service</li>
                 </ul>
             </div>
         </div>
+
     </footer>
 </body>
 
