@@ -10,4 +10,8 @@ class PageController extends Controller
     {
         return View('landing');
     }
+    public function contactPage()
+    {
+        return View('contact');
+    }
 }

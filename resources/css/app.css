@@ -41,6 +41,7 @@ footer {
         align-items: center;
         i {
             margin-right: 0.5vw;
+            color: #3c3c3c;
         }
     }
     .footer-right {

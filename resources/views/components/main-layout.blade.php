@@ -82,11 +82,11 @@
     </main>
     <footer class="container-fluid">
         <div class="footer-icons">
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-linkedin"></i>
+            <a href="#"> <i class="bi bi-twitter-x"></i></a>
+            <a href="#"> <i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="#"> <i class="bi bi-linkedin"></i></a>
         </div>
 
         <div class="footer-right">
@@ -105,9 +105,9 @@
             <div class="footer-links">
                 <ul>
                     <h6>Explore</h6>
-                    <li>FAQ</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms Of Service</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="">Terms Of Service</a></li>
                 </ul>
             </div>
         </div>
