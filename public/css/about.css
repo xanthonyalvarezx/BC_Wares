@@ -1,0 +1,15 @@
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    h2 {
+        font-family: Rosarvio;
+        font-weight: 500;
+        color: #d97b66;
+    }
+}
+.about-text {
+    width: 50%;
+    margin-bottom: 6vh;
+}

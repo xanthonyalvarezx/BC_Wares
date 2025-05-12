@@ -14,4 +14,16 @@ class PageController extends Controller
     {
         return View('contact');
     }
+    public function aboutPage()
+    {
+        return View('about');
+    }
+    public function vendorPage()
+    {
+        return View('vendors');
+    }
+    public function shopPage()
+    {
+        return View('shop');
+    }
 }

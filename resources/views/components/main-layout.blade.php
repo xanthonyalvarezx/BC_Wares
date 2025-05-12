@@ -38,18 +38,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link {{ Request::segment(1) == '' ? 'active' : '' }}" aria-current="page"
+                                href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link {{ Request::segment(1) == 'shop' ? 'active' : '' }}"
+                                href="/shop">Shop</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle {{ Request::segment(1) == 'vendors' ? 'active' : '' }}"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Vendors
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-center" href="#">Become a vendor</a></li>
+                                <li><a class="dropdown-item text-center" href="/vendors">Become a vendor</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                     <p class="text-center">Shop current vendors:</p>
@@ -66,10 +69,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">About</a>
+                            <a class="nav-link {{ Request::segment(1) == 'about' ? 'active' : '' }}"
+                                href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Contact</a>
+                            <a class="nav-link {{ Request::segment(1) == 'contact' ? 'active' : '' }}"
+                                href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
