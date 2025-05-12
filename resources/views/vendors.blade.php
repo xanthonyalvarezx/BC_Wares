@@ -17,7 +17,7 @@
             <button><a href="#vendor-form">Sign up as a vendor</a></button>
         </div>
         <div id="vendor-form" class="vendor-form-wrapper">
-            <form class="vendor-form" action="#">
+            <form class="vendor-form" action="/register/vendor">
                 <h5>Register to become a vendor</h5>
                 <input class="form-input" type="text" placeholder="First Name">
                 <input class="form-input" type="text" placeholder="Last Name">
@@ -55,5 +55,5 @@
             </form>
         </div>
     </div>
-    </div>
+
 </x-main-layout>
