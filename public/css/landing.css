@@ -1,0 +1,84 @@
+* {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.container-top {
+    height: 40vh;
+    display: flex;
+    .top-left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .shop-now-button {
+            background-color: #e3b04b;
+            border: none;
+            border-radius: 20px;
+            padding-inline: 1vw;
+            color: #ffffff;
+        }
+    }
+    .top-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+.container-middle {
+    height: 40vh;
+    display: flex;
+    background-color: #f4ece1;
+    .middle-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2vh;
+        h2 {
+            color: #d97b66;
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            width: 25vw;
+        }
+    }
+    .middle-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+.container-bottom {
+    background-color: #e8d8c3;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .featured-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}
