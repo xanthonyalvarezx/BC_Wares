@@ -6,6 +6,7 @@ use App\Http\Controllers\PageController;
 ///////////////
 /*PAGE ROUTES*/
 //////////////
+Route::get('/test', [PageController::class, 'testPage']);
 Route::get('/', [PageController::class, 'landingPage']);
 Route::get('/contact', [PageController::class, 'contactPage']);
 Route::get('/about', [PageController::class, 'aboutPage']);
@@ -16,7 +17,6 @@ Route::get('/shop', [PageController::class, 'shopPage']);
 //////////////
 // Get Routes
 Route::get('/login', [PageController::class, 'loginPage']);
-Route::get('/register/vendor', [PageController::class, 'registerPage']);
 // Post Routes
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
