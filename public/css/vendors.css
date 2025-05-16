@@ -28,13 +28,14 @@ html {
         border: none;
         background-color: #e3b04b;
         border-radius: 10px;
-        padding: 0.2vw;
+        padding-inline: 0.8vw;
+        padding-block: 0.5vw;
         text-align: center;
         color: #ffffff;
         a {
             text-decoration: none;
             color: #ffffff;
-            font-weight: 500;
+            font-weight: 600;
         }
     }
     h2 {
@@ -75,6 +76,8 @@ html {
         border: none;
         border-radius: 10px;
         margin-top: 2vh;
+        padding: 0.5vw;
+        font-weight: 600;
     }
     .state-zip {
         display: flex;

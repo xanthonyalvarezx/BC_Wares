@@ -20,7 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
     {{-- custom css --}}
-    @vite(['resources/css/app.css'])
+    {{-- @vite(['resources/css/app.css']) --}}
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     @stack('styles')
     <title>BC Wares | {{ $title }}</title>
 </head>

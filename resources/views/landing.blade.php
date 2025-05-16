@@ -1,6 +1,6 @@
 <x-main-layout title="Home">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/landing.css') }}">
     @endpush
     <div class="container-top">
         <div class="top-left">

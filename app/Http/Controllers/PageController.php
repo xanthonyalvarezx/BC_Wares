@@ -58,4 +58,13 @@ class PageController extends Controller
     {
         return View('shop');
     }
+    /**
+     * The shoploginPage function returns a view for the shoplogin page.
+     * 
+     * @return View named  'login' is being returned.
+     */
+    public function loginPage()
+    {
+        return View('login');
+    }
 }

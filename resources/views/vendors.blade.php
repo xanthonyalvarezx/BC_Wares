@@ -1,6 +1,6 @@
 <x-main-layout title="Vendors">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/vendors.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/vendors.css') }}">
     @endpush
     <div>
         <div class="top-content">
@@ -14,7 +14,7 @@
         </div>
         <div class="call-to-action">
             <h2>Register to start selling!</h2>
-            <button><a href="#vendor-form">Sign up as a vendor</a></button>
+            <button><a href="#vendor-form">Register as a vendor</a></button>
         </div>
         <div id="vendor-form" class="vendor-form-wrapper">
             <form class="vendor-form" action="/register" method="POST">

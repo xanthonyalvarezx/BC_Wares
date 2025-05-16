@@ -18,7 +18,8 @@ Route::get('/shop', [PageController::class, 'shopPage']);
 // Get Routes
 Route::get('/login', [PageController::class, 'loginPage']);
 // Post Routes
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/loginVendor', [AuthController::class, 'loginVendor']);
+Route::post('/loginCustomer', [AuthController::class, 'loginCustomer']);
 Route::post('/register', [AuthController::class, 'register']);
 
 

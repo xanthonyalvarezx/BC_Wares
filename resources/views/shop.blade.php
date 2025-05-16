@@ -1,6 +1,6 @@
 <x-main-layout title="Shop">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/shop.css') }}">
         <div class="shop-outer-wrapper">
             <div class="filters">
                 <p>Filters:</p>

@@ -1,6 +1,6 @@
 <x-main-layout title="About">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/about.css') }}">
     @endpush
     <div class="about-wrapper text-center">
         <h2>About BC Wares</h2>

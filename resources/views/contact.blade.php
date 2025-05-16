@@ -1,6 +1,6 @@
 <x-main-layout title="Contact">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/contact.css') }}">
     @endpush
     <div>
         <div class="form-wrapper">
