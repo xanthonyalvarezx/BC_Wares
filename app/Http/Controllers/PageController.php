@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function loginPage()
+    {
+        return View('login');
+    }
     public function testPage()
     {
         return View('test');
@@ -57,5 +61,9 @@ class PageController extends Controller
     public function shopPage()
     {
         return View('shop');
+    }
+    public function vendorDash()
+    {
+        return View('vendor-dash', ['page' => '']);
     }
 }

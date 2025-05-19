@@ -23,6 +23,7 @@ return new class extends Migration
             $table->integer('producttype');
             $table->integer('policy')->default(0);
             $table->integer('terms')->default(0);
+            $table->boolean('vendor')->default(0);
         });
     }
 

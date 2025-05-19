@@ -77,6 +77,16 @@
                                 href="/contact">Contact</a>
                         </li>
                     </ul>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a class="button" href="{{ auth()->check() ? '/logout' : '/login' }}">
+                            {{ auth()->check() ? 'logout' : 'login' }}</a>
+                        @if (!auth()->check())
+                            <a class="button" href="/vendors">Register</a>
+                        @endif
+                    </div>
+
+                    </ul>
                 </div>
             </div>
         </nav>

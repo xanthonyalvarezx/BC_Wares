@@ -10,7 +10,28 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    public function login(Request $request) {}
+    public function login(Request $request)
+    {
+
+        $loginData = $request->validate([
+            'email' => ['required'],
+            'password' => ['required'],
+        ]);
+        if (auth()->attempt(['email' => $loginData['email'], 'password' => $loginData['password']])) {
+            $request->session()->regenerate();
+
+            // event(new authLog(['name' => auth()->user()->name, 'action' => 'login']));
+            if (auth()->user()->vendor == 1) {
+                return redirect('/vendor/dashboard/products')->with('success', auth()->user()->business . " you've successfully logged in");
+            } else {
+                return redirect('/shop')->with('success', auth()->user()->firstname . " you've successfully logged in");
+            }
+        } else {
+            // event(new authLog(['name' => '', 'email' => $loginData['email'], 'action' => 'failed login']));
+            return redirect('/login')->with('error', 'Invalid credentials');
+        }
+    }
+
     public function register(Request $request)
     {
         $validatedData = $request->validate([
@@ -31,6 +52,7 @@ class AuthController extends Controller
 
         $validatedData['addresslinetwo'] = $validatedData['addresslinetwo'] ?? '';
         $validatedData['addresslinethree'] = $validatedData['addresslinethree'] ?? '';
+        $validatedData['vendor'] = true;
 
 
         $validatedData['password'] = Hash::make($validatedData['password']);
@@ -46,5 +68,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->logout();
+        return redirect('/login');
     }
 }
