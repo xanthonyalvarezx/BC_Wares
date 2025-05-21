@@ -27,6 +27,12 @@ header {
     text-decoration: none;
 }
 
+.logo-image {
+    border-radius: 50%;
+    margin-left: 2vw;
+    width: 8vw;
+}
+
 .navbar {
     background-color: #faf4ed !important;
     height: 20vh;
@@ -87,7 +93,7 @@ footer {
 .dash-tab {
     background-color: #e8d8c3;
     border-radius: 0px 10px 0px 0px;
-    width: 7vw;
+    width: 8vw;
     height: fit-content;
     margin-right: 0.2vw;
     a {

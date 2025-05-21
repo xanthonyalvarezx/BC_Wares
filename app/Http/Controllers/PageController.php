@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -60,7 +61,8 @@ class PageController extends Controller
      */
     public function shopPage()
     {
-        return View('shop');
+        $products = Products::all();
+        return View('shop', ['products' => $products]);
     }
     public function vendorDash()
     {

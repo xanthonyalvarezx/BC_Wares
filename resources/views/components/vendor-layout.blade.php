@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+@if (session()->has('success'))
+    <div class="container container--narrow">
+        <div class="alert alert-success text-center">
+            {{ session('success') }}
+        </div>
+    </div>
+@elseif(session()->has('error'))
+    <div class="container container--narrow">
+        <div class="alert alert-danger text-center">
+            {{ session('error') }}
+        </div>
+    </div>
+@endif
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +33,7 @@
     {{-- CUSTOM CSS --}}
     @vite(['resources/css/app.css'])
     @stack('styles')
-    <title>{{ $vendor }} | Dashboard </title>
+    <title>{{ auth()->user()->business }} | Dashboard </title>
 </head>
 
 <body>

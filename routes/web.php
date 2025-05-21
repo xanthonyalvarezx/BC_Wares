@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AwsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\DashboardController;
+
+Route::post('/test/aws', [AwsController::class, 'upload']);
 ///////////////
 /*PAGE ROUTES*/
 //////////////
@@ -31,8 +34,9 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::prefix('vendor')->group(
     function () {
         Route::get('/dashboard/{page}', [DashboardController::class, 'getPageData']);
-        Route::get('/dashboard/add/products', [DashboardController::class, 'addProductForm']);
+        // Route::get('/dashboard/add/products', [DashboardController::class, 'addProductForm']);
         Route::get('/dashboard/settings', [DashboardController::class, 'settingsPage']);
+        Route::post('/add/products', [DashboardController::class, 'addProduct']);
     }
 );
 

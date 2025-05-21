@@ -9,11 +9,12 @@
                     Local Goods <br>
                     & Crafts
                 </h2>
-                <button class="shop-now-button">Shop Now</button>
+                <a class="btn button" href="/shop">Shop Now</a>
             </div>
         </div>
         <div class="top-right">
-            <img src="https://placehold.co/300" alt="">
+            <img src="https://bcwares.s3.us-east-2.amazonaws.com/photos/potter-ceramics-clay-circle-1612485671.jpg"
+                alt="photo of a potter throwing a piece of pottery on a potters wheel">
         </div>
     </div>
     <div class="container-middle">
@@ -24,7 +25,8 @@
         </div>
         <div class="middle-right">
             <div class="top-right">
-                <img src="https://placehold.co/300" alt="">
+                <img src="https://bcwares.s3.us-east-2.amazonaws.com/photos/needleandthread.jpg"
+                    alt="photo of needle and thread for crafting">
             </div>
         </div>
     </div>

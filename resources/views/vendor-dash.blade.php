@@ -16,7 +16,7 @@
                 <a class="nav-link {{ Request::segment(3) == 'reports' ? 'active' : '' }}" href="reports">Reports</a>
             </li>
             <li class="nav-item dash-tab">
-                <a class="nav-link {{ Request::segment(3) == 'add' ? 'active' : '' }}" href="add/products">Add
+                <a class="nav-link {{ Request::segment(3) == 'add' ? 'active' : '' }}" href="add_products">Add
                     products</a>
             </li>
             <li class="nav-item dash-tab">
@@ -28,13 +28,7 @@
             @if ($page != '')
                 @switch($page)
                     @case('products')
-                        <div class="products-div">
-                            <div class="card product-card">
-                                <h5>Product name</h5>
-                                <img class="product-image" src="https://placehold.co/300" alt="" width="300px">
-                                <span>product price</span>
-                            </div>
-                        </div>
+                        @include('show-products')
                     @break
 
                     @case('sales')
@@ -67,7 +61,11 @@
                     @break
 
                     @case('reports')
-                        reports
+                        @include('reports')
+                    @break
+
+                    @case('add_products')
+                        @include('add-products')
                     @break
 
                     @default
