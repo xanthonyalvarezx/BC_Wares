@@ -30,7 +30,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img class="logo-image"
+                        src="https://bcwares.s3.us-east-2.amazonaws.com/photos/ChatGPT+Image+May+21%2C+2025%2C+12_41_43+PM.jpg"
+                        alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,6 +78,16 @@
                             <a class="nav-link {{ Request::segment(1) == 'contact' ? 'active' : '' }}"
                                 href="/contact">Contact</a>
                         </li>
+                    </ul>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a class="button" href="{{ auth()->check() ? '/logout' : '/login' }}">
+                            {{ auth()->check() ? 'logout' : 'login' }}</a>
+                        @if (!auth()->check())
+                            <a class="button" href="/vendors">Register</a>
+                        @endif
+                    </div>
+
                     </ul>
                 </div>
             </div>

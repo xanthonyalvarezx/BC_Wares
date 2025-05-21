@@ -14,7 +14,7 @@
         </div>
         <div class="call-to-action">
             <h2>Register to start selling!</h2>
-            <button><a href="#vendor-form">Sign up as a vendor</a></button>
+            <button><a href="#vendor-form">Register as a vendor</a></button>
         </div>
         <div id="vendor-form" class="vendor-form-wrapper">
             <form class="vendor-form" action="/register" method="POST">

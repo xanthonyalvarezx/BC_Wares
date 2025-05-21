@@ -16,6 +16,23 @@ header {
     background-color: #faf4ed;
 }
 
+.button {
+    background-color: #e3b04b;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 0.5vw;
+    padding-block: 0.2vh;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    border-radius: 50%;
+    margin-left: 2vw;
+    width: 8vw;
+}
+
 .navbar {
     background-color: #faf4ed !important;
     height: 20vh;
@@ -30,6 +47,14 @@ header {
         justify-content: space-around;
         text-align: end;
     }
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10vh;
+    max-width: 10vw;
 }
 
 footer {
@@ -63,4 +88,27 @@ footer {
             }
         }
     }
+}
+/* VENDOR DASH START */
+.dash-tab {
+    background-color: #e8d8c3;
+    border-radius: 0px 10px 0px 0px;
+    width: 8vw;
+    height: fit-content;
+    margin-right: 0.2vw;
+    a {
+        color: #000000;
+        font-weight: 500;
+    }
+}
+.active {
+    background-color: #e3b04b !important;
+    color: rgb(96, 96, 96) !important;
+    border-radius: 0px 10px 0px 0px !important;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.dash-content-div {
+    background-color: #e8d8c3;
+    height: 80vh;
 }
