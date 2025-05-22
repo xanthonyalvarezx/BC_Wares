@@ -128,8 +128,8 @@
                 </ul>
             </div>
         </div>
-
     </footer>
+    <livewire:modals.product-modal />
 </body>
 
 </html>
