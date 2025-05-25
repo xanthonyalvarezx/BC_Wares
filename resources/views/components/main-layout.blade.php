@@ -81,13 +81,17 @@
                     </ul>
                     </ul>
                     <div class="nav-buttons">
-                        <a class="button" href="{{ auth()->check() ? '/logout' : '/login' }}">
-                            {{ auth()->check() ? 'logout' : 'login' }}</a>
-                        @if (!auth()->check())
-                            <a class="button" href="/vendors">Register</a>
+                        <a class="button"
+                            href="{{ Auth::check() || Auth::guard('customer')->check() ? '/logout' : '/login' }}">
+                            {{ Auth::check() || Auth::guard('customer')->check() ? 'logout' : 'login' }}</a>
+                        @if (Auth::guard('customer')->check())
+                            <a class="button" href="/cart">
+                                <i class="bi bi-cart"></i>
+                                <span
+                                    class="cart-count">{{ session()->get('cart') ? count(session()->get('cart')) : 0 }}</span>
+                            </a>
                         @endif
                     </div>
-
                     </ul>
                 </div>
             </div>

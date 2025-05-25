@@ -11,6 +11,7 @@
                     <input type="text" name="lastName" placeholder="Last Name">
                     <input type="text" name="Email" placeholder="Email">
                     <textarea name="messageBody" id="" cols="25" rows="8" placeholder="Add your mesage..."></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
 

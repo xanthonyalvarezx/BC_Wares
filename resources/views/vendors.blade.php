@@ -4,7 +4,7 @@
     @endpush
     <div>
         <div class="top-content">
-            <h2>Becoming a vendor</h2>
+            <h2>Becoming A Vendor</h2>
             <p>
                 As a vendor you are very important. You are the artist, crafts-person, farmer, designer...but, most of
                 all you are local. Supporting small businesses like yours is our main mission. Putting sales into the
@@ -64,5 +64,4 @@
             </form>
         </div>
     </div>
-
 </x-main-layout>

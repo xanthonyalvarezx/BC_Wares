@@ -3,6 +3,12 @@
         <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     @endpush
     <div class="container product-form-container">
+        @if (session()->has('success'))
+            <div class="success-message">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <form class="add-product-form" action="/vendor/add/products" method="post" enctype="multipart/form-data">
             <h1 class="text-center">Add Products</h1>
             @csrf
@@ -24,5 +30,4 @@
             <button class="button" type="submit">Add</button>
         </form>
     </div>
-
 </x-vendor-layout>
