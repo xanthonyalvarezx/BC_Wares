@@ -11,6 +11,16 @@ class PageController extends Controller
     {
         return View('login');
     }
+
+    /**
+     * The customerRegistrationPage function returns a view for the customer registration page.
+     * 
+     * @return View named 'customer-registration' is being returned.
+     */
+    public function customerRegistrationPage()
+    {
+        return View('customer-registration');
+    }
     public function testPage()
     {
         return View('test');
@@ -57,13 +67,20 @@ class PageController extends Controller
     /**
      * The shopPage function returns a view for the shop page.
      * 
-     * @return View named  shop' is being returned.
+     * @return View named  'shop' is being returned.
      */
     public function shopPage()
     {
+        // get all products
         $products = Products::all();
+        // return view with products
         return View('shop', ['products' => $products]);
     }
+    /**
+     * The vendorDash function returns a view for the vendor dashboard.
+     * 
+     * @return View named 'vendor-dash' is being returned.
+     */
     public function vendorDash()
     {
         return View('vendor-dash', ['page' => '']);

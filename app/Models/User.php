@@ -58,6 +58,11 @@ class User extends Authenticatable
         ];
     }
 
+    /**
+     *links the user to the products
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function products()
     {
         return $this->hasMany(Products::class, 'user_id');

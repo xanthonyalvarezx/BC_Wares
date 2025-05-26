@@ -28,8 +28,9 @@
                             <h3 class="title">{{ $product->name }}</h3>
                         </div>
                         <a href="#" x-data
-                            x-on:click="Livewire.dispatchTo('modals.product-modal', 'show', [{{ $product->id }}])"><img
-                                class="product-image" src="{{ $product->image_url }}" alt="" width="350px"></a></a>
+                            x-on:click="Livewire.dispatchTo('modals.product-modal', 'show', [{{ $product->id }}])">
+                            <img class="product-image" src="{{ $product->image_url }}" alt=""
+                                width="350px"></a></a>
                         <p class="price">${{ number_format($product->price, 2) }}</p>
                     </div>
                 @endforeach

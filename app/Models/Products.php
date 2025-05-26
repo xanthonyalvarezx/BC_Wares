@@ -29,6 +29,11 @@ class Products extends Model
         'type'
     ];
 
+    /**
+     * links the product to the user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function userProducts()
     {
         return $this->belongsTo(User::class, 'user_id');

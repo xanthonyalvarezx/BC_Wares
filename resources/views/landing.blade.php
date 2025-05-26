@@ -9,7 +9,11 @@
                     Local Goods <br>
                     & Crafts
                 </h2>
-                <a class="btn button" href="/shop">Shop Now</a>
+                @if (Auth::check())
+                    <a class="btn button" href="/shop">Shop Now</a>
+                @else
+                    <a class="btn button" href="/customer/registration">Register to start shopping</a>
+                @endif
             </div>
         </div>
         <div class="top-right">
@@ -48,5 +52,4 @@
             </div>
         </div>
     </div>
-
 </x-main-layout>
